@@ -35,6 +35,24 @@
   z-index: 5;
   padding: 48px 0 48px 40px;
 }
+.mob-menu__close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: var(--color-primary);
+  box-sizing: border-box;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
+  cursor: pointer;
+  &:hover .mob-menu__close-icon {
+    fill: var(--accent-color);
+  }
+}
 .mob-menu__list {
   margin-bottom: -32px;
 }
@@ -51,18 +69,26 @@
 }
 
 .mob-menu-contacts__list {
+  margin-bottom: -32px;
+  position: absolute;
+  bottom: 134px;
 }
 .mob-menu-contacts__item {
+  margin-bottom: 32px;
 }
 .mob-menu-contacts__link {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-
+  @include font(24px, 500, 28px, 0.02em);
   color: #757575;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    @include font(34px, 500, 40px, 0.02em);
+  }
 }
 .mob-menu-social-list {
+  position: absolute;
+  bottom: 40px;
   display: flex;
   margin-right: -20px;
 }

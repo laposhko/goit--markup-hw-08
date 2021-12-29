@@ -25,9 +25,9 @@
   }
 }
 .team-list__item {
-  width: 450px;
+  // width: 450px;
   height: auto;
-  flex-basis: 450px;
+  flex-basis: calc(100% - 30px);
   // min-height: 368px;
   background-color: var(--color-primary);
   // margin-right: 30px;

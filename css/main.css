@@ -1273,7 +1273,7 @@
   color: var(--color-primary);
   cursor: pointer;
   display: block;
-  margin: 30px auto 10px auto;
+  margin: 30px auto 0 auto;
 }
 
 h1,
